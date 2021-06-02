@@ -11,7 +11,7 @@ import closeImg from "../../assets/close.svg";
 import Modal from "react-modal";
 
 import { FormEvent, useState, useContext } from "react";
-import { TransactionsContext } from "../../transactionsContext";
+import { useTransacctions } from "../../hooks/useTransactions";
 
 Modal.setAppElement("#root");
 
@@ -21,7 +21,7 @@ interface AppProps {
 }
 
 export function NewTransactionModal({ isOpen, onRequestClose }: AppProps) {
-  const { createTransaction } = useContext(TransactionsContext);
+  const { createTransaction } = useTransacctions();
 
   const [type, setType] = useState("vazio");
   const [title, setTitle] = useState("");

@@ -1,5 +1,5 @@
 # dtmoney
-> Essa aplicação visa a prática do conteúdo de React js sobre: Modals, Contexto e criação de hooks.
+> Essa aplicação visa a prática do conteúdo de React js sobre: Modals, Contexto e Criação de Hooks.
 
 ---
 ## Runing the project

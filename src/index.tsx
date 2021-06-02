@@ -18,7 +18,7 @@ createServer({
           type: "deposit",
           category: "dev",
           amount: 131313,
-          createdAt: new Date("2021-02-12 09:00:00"),
+          createdAt: new Date("2020-08-19T23:13:44.514Z"),
         },
       ],
     });

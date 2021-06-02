@@ -28,15 +28,22 @@ export function NewTransactionModal({ isOpen, onRequestClose }: AppProps) {
   const [amount, setAmount] = useState(0);
   const [category, setCategory] = useState("");
 
-  function handleCreateNewTransaction(event: FormEvent) {
+  async function handleCreateNewTransaction(event: FormEvent) {
     event.preventDefault();
 
-    createTransaction({
+    await createTransaction({
       title,
       amount,
       category,
       type,
     });
+
+    setAmount(0);
+    setCategory("");
+    setTitle("");
+    setType("");
+
+    onRequestClose();
   }
 
   return (
